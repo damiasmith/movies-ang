@@ -1,0 +1,9 @@
+<h3> {{ name }} </h3>
+
+<ul>
+<li class="spacing" *ngFor="let movie of movies"> 
+  {{ movie.title }} -
+  {{ movie.year }},
+  {{ movie.category }} 
+</li>
+</ul>
