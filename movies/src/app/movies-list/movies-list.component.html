@@ -1,9 +1,12 @@
 <h3> {{ name }} </h3>
 
 <ul>
-<li class="spacing" *ngFor="let movie of movies"> 
-  {{ movie.title }} -
+<li 
+  class="spacing" 
+  *ngFor="let movie of movies"
+> 
+  <span class="clickable" (click)="details(movie)">{{ movie.title }}</span> -
   {{ movie.year }},
-  {{ movie.category }} 
+  <span [class.comedy]="movie.category==='comedy'"> {{ movie.category }} </span>
 </li>
 </ul>

@@ -15,7 +15,7 @@ export class AppComponent {
   ];
 
   toWatch = [
-    new Movie('1917', 'action', 2019),
+    new Movie('Jumanji', 'comedy', 2019),
     new Movie('Knives Out', 'mystery', 2019)
   ];
 }
